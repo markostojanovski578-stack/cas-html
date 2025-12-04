@@ -1,0 +1,133 @@
+:root{
+  --bg:#f3f4f8;
+  --container-width:1000px;
+  --accent:#2b7be4;
+  --muted:#6b7280;
+  --card-bg:#fff;
+  --shadow: 0 6px 18px rgba(33,33,33,0.08);
+  --radius:10px;
+}
+
+/* Global reset-ish */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: 'Nunito', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:#24303a;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
+
+/* container to center content */
+.container{
+  width:90%;
+  max-width:var(--container-width);
+  margin:0 auto;
+}
+
+/* Header with gradient and big title */
+.site-header{
+  background: linear-gradient(135deg, #5b6be6 0%, #9b59b6 60%);
+  color:white;
+  padding:48px 0 56px;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.12);
+}
+.site-header h1{
+  margin:0;
+  font-size:36px;
+  text-align:center;
+  font-weight:800;
+  letter-spacing:0.5px;
+}
+.subtitle{
+  margin:8px 0 0;
+  text-align:center;
+  color:rgba(255,255,255,0.9);
+  font-weight:600;
+  opacity:0.95;
+}
+
+/* Main area spacing */
+.main-content{
+  padding:30px 0 60px;
+}
+
+/* Card base */
+.card{
+  background:var(--card-bg);
+  padding:22px 26px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  margin-bottom:20px;
+  position:relative;
+  border-left:6px solid rgba(0,0,0,0.04);
+}
+
+/* Headings inside cards */
+.card h2{
+  margin:0 0 8px;
+  font-size:22px;
+  color:#20323a;
+  font-weight:800;
+}
+
+/* Paragraph styles */
+.card p{
+  margin:0;
+  color:var(--muted);
+  font-weight:600;
+}
+
+/* Highlight card uses a soft pastel gradient and an accent strip */
+.card.highlight{
+  background: linear-gradient(90deg, #e1f0ff 0%, #f6e9fb 100%);
+  border-left-color:#2b7be4;
+}
+
+/* Unique ID card style */
+#unique{
+  background: #fff7d9;
+  border-left-color:#f2c94c;
+}
+
+/* Buttons */
+.buttons{
+  margin-top:18px;
+  display:flex;
+  gap:12px;
+}
+.btn{
+  appearance:none;
+  border:1px solid rgba(0,0,0,0.12);
+  background:white;
+  padding:10px 16px;
+  border-radius:8px;
+  font-weight:700;
+  cursor:pointer;
+}
+.btn.primary{
+  background:var(--accent);
+  color:white;
+  border:none;
+}
+
+/* Footer */
+.site-footer{
+  background:#2e3a44;
+  color:#e6eef7;
+  padding:18px 0;
+  margin-top:40px;
+  text-align:center;
+  font-weight:600;
+}
+
+/* Small responsive tweaks */
+@media (max-width:640px){
+  .site-header h1{font-size:26px}
+  .card h2{font-size:18px}
+  .buttons{flex-direction:column; align-items:flex-start}
+  .btn{width:100%}
+}

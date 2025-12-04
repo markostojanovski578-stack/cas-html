@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вовед во CSS</title>
+
+    <style>
+        header {
+            background: linear-gradient(135deg, #1e0349, #a9b0eb);
+            color: azure;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 45px;
+        }
+        
+        header p {
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+        
+        body {
+            margin: 0;
+        }
+
+        .container {
+            width: 70%;
+            max-width: 900px;
+            margin: 40px auto;
+            
+        }
+
+        .card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.8);
+}
+
+
+        .card p {
+            color: black;
+        }
+
+        
+
+        .highlight {
+    background: linear-gradient(90deg, #dcecff, #f7e5ff);
+    border-left: 5px solid #3b6eea;
+    
+}
+
+#unique {
+    background: #fff5d2;             
+    border-left: 5px solid #f2c94c;   
+}
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+button.primary {
+    background: #2b7be4;
+    color: white;
+    border: none;
+}
+
+footer {
+    background: #2e3a44;
+    color: #cbd4dd;
+    text-align: center;
+    padding: 18px 0;
+    margin-top: 40px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+         <h1>Вовед во CSS</h1>
+    <p>Пример со internal stylesheet</p>
+    </header>
+    
+    <div class="container">
+        <div class="card">
+            <h2>Селектори по елемент</h2>
+            <p>Овој текст е стилизиран со селектор за &lt;p&gt; елемент.</p>
+        </div>
+        <div class="card highlight">
+    <h2>Селектори по класа</h2>
+    <p>Оваа картичка има класа highlight со посебна позадина.</p>
+</div>
+
+<div id="unique" class="card">
+    <h2>Селектор по ID</h2>
+    <p>Овој елемент има уникатен ID и посебен стил.</p>
+</div>
+
+<div class="buttons">
+    <button>Стандардно копче</button>
+    <button class="primary">Primary копче</button>
+</div>
+    </div>
+<footer>
+    © 2025 Internal CSS демо
+</footer>
+
+    
+</body>
+</html>
