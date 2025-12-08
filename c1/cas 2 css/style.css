@@ -1,0 +1,36 @@
+h1 {
+    color: rgb(224, 191, 158);
+    background: rgb(3, 9, 6);
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    
+}
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 27px;
+    text-align: center;
+}
+
+.bukva {
+    font-size: 20px;
+    color: rgb(24, 63, 24);
+}
+
+.container {
+    background: rgb(133, 19, 233);
+    height: 120px;
+    display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+}
+
+.card {
+background-color: blanchedalmond;
+height: 27px;
+width: 33px;
+height: 33px;
+margin: 5px;
+}

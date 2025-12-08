@@ -1,0 +1,187 @@
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Make body a flex container that fills the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f2f5; /* Light gray background for the page */
+    display: flex;
+    flex-direction: column; /* Stack header, main content, and footer vertically */
+}
+
+/* Header styling */
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3498db;
+    color: white;
+    padding: 15px 20px;
+    flex-shrink: 0; /* Prevent header from shrinking */
+}
+
+.title h1 {
+    margin: 0;
+}
+
+.right-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.right-buttons button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.right-buttons button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main container - fills available space */
+.main-container {
+    flex: 1; /* Take up all available space */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Main content layout */
+.main-content {
+    display: flex;
+    gap: 20px; /* Space between content area and sidebar */
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1; /* Take up all available space in main-container */
+}
+
+/* Content area - the big block on the left */
+.content-area {
+    flex: 3; /* Takes up 3/4 of the space */
+    background-color: white; /* White background */
+    padding: 30px; /* Internal padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Subtle shadow */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sidebar container - holds the two separate blocks */
+.sidebar-container {
+    flex: 1; /* Takes up 1/4 of the space */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between the two sidebar blocks */
+}
+
+/* Individual sidebar blocks - SAME COLOR as the big block on the left */
+.sidebar-block {
+    background-color: white; /* SAME white background as content area */
+    padding: 7px 15px; /* Same internal padding */
+    border-radius: 8px; /* Same rounded corners */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* SAME shadow as content area */
+}
+
+/* Button styling */
+.buttons {
+    margin: 20px 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn-secondary {
+    background-color: #e0e0e0;
+    color: #333;
+    border: 2px solid #ccc;
+}
+
+.btn-secondary:hover {
+    background-color: #d0d0d0;
+}
+
+/* Card container - directly below buttons */
+.card-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    /* Removed flex: 1 - cards no longer expand to fill space */
+}
+
+/* Individual card styling */
+.card {
+    flex: 1;
+    background-color: #f8f9fa; /* Lighter background for cards inside */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px; /* Reduced padding */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #3498db;
+    margin-top: 0;
+    margin-bottom: 8px; /* Reduced margin */
+    font-size: 16px; /* Slightly smaller font */
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 0;
+    font-size: 13px; /* Slightly smaller font */
+    line-height: 1.4; /* Tighter line height */
+}
+
+/* Sidebar block headings */
+.sidebar-block h3 {
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.sidebar-block p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    flex-shrink: 0; /* Prevent footer from shrinking */
+}
+
+
+}
