@@ -10,6 +10,8 @@
  display: flex;
  justify-content: space-between;
  align-items: center;
+ border: 1px solid black;
+ box-shadow: 100px 100px 100px black;
  
  
  
@@ -129,21 +131,21 @@ border-radius: 15px;
 }
 
 .div8 {
-    background: rgba(255, 255, 255, 0.8); /* transparent white */
+    background: rgba(255, 255, 255, 0.8); 
     padding: 20px 25px;
     border-radius: 15px;
     box-shadow: 0 8px 18px rgba(0,0,0,0.25);
     text-align: center;
-    backdrop-filter: blur(3px); /* optional: gives a frosted effect */
+    backdrop-filter: blur(3px);
 }
 
 .div14 {
-    background: rgba(255, 255, 255, 0.8); /* transparent white */
+    background: rgba(255, 255, 255, 0.8); 
     padding: 20px 25px;
     border-radius: 15px;
     box-shadow: 0 8px 18px rgba(0,0,0,0.25);
     text-align: center;
-    backdrop-filter: blur(3px); /* optional: gives a frosted effect */
+    backdrop-filter: blur(3px);
     
 }
 
@@ -161,12 +163,12 @@ border-radius: 15px;
 }
 
 .div9 {
-    background: rgba(255, 255, 255, 0.8); /* transparent white */
+    background: rgba(255, 255, 255, 0.8); 
     padding: 20px 25px;
     border-radius: 15px;
     box-shadow: 0 8px 18px rgba(0,0,0,0.25);
     text-align: center;
-    backdrop-filter: blur(3px); /* optional: gives a frosted effect */
+    backdrop-filter: blur(3px); 
 
 }
 
@@ -188,6 +190,6 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    flex-shrink: 0; /* Prevent footer from shrinking */
+    flex-shrink: 0; 
 }
 
