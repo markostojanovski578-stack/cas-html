@@ -20,7 +20,7 @@ body {
     flex-direction: column; 
 }
 
-/* Header styling */
+
 .title {
     display: flex;
     justify-content: space-between;
