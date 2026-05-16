@@ -1,0 +1,184 @@
+* {
+     font-family: "Inter", Arial, sans-serif;
+
+}
+
+body {
+    background-color: rgb(233, 234, 235);
+}
+
+.container {
+    background-color: rgb(249, 249, 249);
+    margin: 20rem;
+    padding: 5rem;
+    height: 66rem;
+    border-radius: 28px;
+    box-shadow: 1px 1px 3px rgb(159, 158, 158);
+
+    
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+    align-items: center;
+   padding-bottom: 3rem;
+   margin-bottom: 3.8rem;
+    
+}
+
+.main-content h1 {
+    font-weight: bolder;
+    font-size: 2.8rem;
+}
+
+.main-content p {
+    font-size: 1.1rem;
+}
+
+.profile h2 {
+    margin: 0;
+}
+
+.profile {
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.profile::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -0.4em;         
+    width: 4px;
+    height: 2rem;        
+    background-color: #2563eb;
+    border-radius: 2px;
+}
+
+.experience h2 {
+    margin-bottom: 1.8rem;
+}
+
+.experience h3 {
+    margin: 0 0 0.3rem 0; 
+}
+
+.experience p {
+    margin: 0 0 1.2rem 0;
+    color: #555;
+}
+
+.experience {
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.experience::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -0.4em;         
+    width: 4px;
+    height: 2rem;        
+    background-color: #2563eb;
+    border-radius: 2px;
+}
+
+.accomplishments {
+    display: flex;
+    justify-content: space-between;
+     margin-bottom: 1.6rem;
+    
+}
+
+.accomplishments p {
+    font-weight: bolder;
+    color: black;
+
+}
+
+.card3 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.1rem;
+}
+
+.card3 p {
+    font-weight: bolder;
+    color: black;
+}
+
+
+.education {
+    position: relative;
+    padding-left: 1.2rem;
+    
+}
+
+.education::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -0.4em;         
+    width: 4px;
+    height: 2rem;        
+    background-color: #2563eb;
+    border-radius: 2px;
+}
+
+.education-row {
+    display: flex;
+    justify-content: space-between; 
+    
+}
+
+.education-text h3 {
+    margin: 0 0 0.3rem 0;
+}
+
+.education-text p {
+    margin: 0;
+    color: #555;
+}
+
+.education-year p {
+    font-weight: 600;
+    
+}
+
+.Skills {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-top: 3.5rem;
+   
+}
+
+.Skills::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -0.4em;         
+    width: 4px;
+    height: 2rem;        
+    background-color: #2563eb;
+    border-radius: 2px;
+}
+
+.Skills button {
+    border: none;
+    margin: 7px;
+    padding: 15px;
+    background-color: #9ab2e8;
+    border-radius: 8px;
+    color: white;
+    margin-left: 0%;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.Contact-info, 
+.Contact-info p {
+    font-size: 0.95rem; 
+}

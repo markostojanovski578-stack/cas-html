@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+</head>
+<body>
+    
+
+     <%- include("partials/header", {firstname: ime, lastname: prezime}) %>
+
+    <h3>Цело име: <%= ime %> <% prezime %></h3>
+
+    <% niza.forEach(grad => { %>
+        <li> <%= grad %>  </li>
+    <%})%>
+
+    <ul>
+  <% studenti.forEach(student => { %>
+    <li>
+      <%= student.ime %> 
+      <%= student.prezime %> - 
+      <%= student.prosek %>
+    </li>
+  <% }) %>
+</ul>
+
+<table border="1">
+    <tr>
+        <th>Име</th>
+        <th>Презиме</th>
+        <th>Просек</th>
+    </tr>
+
+    <% studenti.forEach(student => { %>
+        <tr>
+        <td><%= student.ime %></td>
+        <td><%= student.prezime %></td>
+        <td><%= student.prosek %></td>
+    </tr>
+    <% }) %>
+</table>
+
+<table border="1" width="100%">
+  <tr>
+    <th>ID</th>
+    <th>Recipe</th>
+    <th>Ingredients</th>
+    <th>Method</th>
+  </tr>
+
+  <% recepti.forEach(recept => { %>
+    <tr>
+      <td><%= recept.id %></td>
+      <td><%= recept.recipe %></td>
+
+      <td>
+        <ul>
+          <% for(let ingredient in recept.ingredients) { %>
+            <li>
+              <%= ingredient %> : 
+              <%= recept.ingredients[ingredient] %>
+            </li>
+          <% } %>
+        </ul>
+      </td>
+
+      <td>
+        <ol>
+          <% for(let step in recept.method) { %>
+            <li><%= recept.method[step] %></li>
+          <% } %>
+        </ol>
+      </td>
+
+    </tr>
+  <% }) %>
+</table>
+
+</body>
+</html>

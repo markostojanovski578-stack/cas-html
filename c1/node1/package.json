@@ -1,0 +1,16 @@
+{
+  "name": "node1",
+  "version": "1.0.0",
+  "description": "chas 02 semos edukacija",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Semos education\" && exit 1"
+  },
+  "keywords": [],
+  "devDependencies": {},
+  "dependencies": {}
+}

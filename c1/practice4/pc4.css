@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    font-family: "Poppins";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    height: 400px;
+    width: 320px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.wrapper:hover .front-face {
+  transform: rotateY(-180deg);
+}
+
+.wrapper:hover .back-face {
+  transform: rotateY(0);
+}
+
+.wrapper .card {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 10px;
+  transform: rotateY(0deg);
+   backface-visibility: hidden;
+  transition: transform 0.6s;
+  
+
+}
+
+.wrapper .card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+html,body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: linear-gradient(35deg, #1cc7d0, #2ede98);
+}
+.wrapper .back-face img {
+  height:150px ;
+  width:150px ;
+  border-radius: 50%;
+   background: linear-gradient(35deg, #1cc7d0, #2ede98);
+}
+
+.wrapper .back-face {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: rotateY(180deg);
+}
+.wrapper .back-face .info{
+    text-align: center;
+
+}
+
+.wrapper .back-face .info .title {
+    font-size: 30px;
+    font-weight:500 ;
+
+
+}
+.wrapper .back-face ul{
+    display: flex;
+}
+.wrapper .back-face ul a {
+    display: block;
+    height: 40px;
+    width: 40px;
+   background: linear-gradient(35deg, #1cc7d0, #2ede98);
+    text-align: center;
+    border: 2px solid transparent;
+    line-height: 38px;
+    margin: 0 5px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.wrapper .back-face ul a:hover {
+    background: none;
+    color:  #1cc7d0;
+    border-color:  #1cc7d0;
+}
+

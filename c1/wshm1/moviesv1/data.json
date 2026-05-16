@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Inception",
+    "director": "Christopher Nolan",
+    "year": 2010,
+    "genre": "sci-fi",
+    "rating": 8.8,
+    "duration": 148
+  },
+  {
+    "title": "The Dark Knight",
+    "director": "Christopher Nolan",
+    "year": 2008,
+    "genre": "action",
+    "rating": 9.0,
+    "duration": 152
+  },
+  {
+    "title": "Interstellar",
+    "director": "Christopher Nolan",
+    "year": 2014,
+    "genre": "sci-fi",
+    "rating": 8.6,
+    "duration": 169
+  },
+  {
+    "title": "Titanic",
+    "director": "James Cameron",
+    "year": 1997,
+    "genre": "romance",
+    "rating": 7.9,
+    "duration": 195
+  },
+  {
+    "title": "Avengers: Endgame",
+    "director": "Anthony Russo",
+    "year": 2019,
+    "genre": "action",
+    "rating": 8.4,
+    "duration": 181
+  }
+]

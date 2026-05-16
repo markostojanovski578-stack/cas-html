@@ -1,0 +1,57 @@
+[
+  {
+    "ime": "Ana",
+    "prezime": "Trajkovska",
+    "prosek": 9.4,
+    "grad": "Skopje",
+    "godini": 21,
+    "fakultet": "FINKI",
+    "nasoka": "Softversko inzenjerstvo",
+    "predmeti": ["Programiranje", "Bazi na podatoci", "Algoritmi"],
+    "stipendija": true
+  },
+  {
+    "ime": "Marko",
+    "prezime": "Stojanov",
+    "prosek": 8.1,
+    "grad": "Bitola",
+    "godini": 22,
+    "fakultet": "Tehnicki fakultet",
+    "nasoka": "Elektrotehnika",
+    "predmeti": ["Elektronika", "Matematika", "Fizika"],
+    "stipendija": false
+  },
+  {
+    "ime": "Stefan",
+    "prezime": "Petkov",
+    "prosek": 7.6,
+    "grad": "Strumica",
+    "godini": 23,
+    "fakultet": "Ekonomski fakultet",
+    "nasoka": "Menadzment",
+    "predmeti": ["Marketing", "Ekonomija", "Finansii"],
+    "stipendija": false
+  },
+  {
+    "ime": "Ivana",
+    "prezime": "Kostova",
+    "prosek": 8.9,
+    "grad": "Stip",
+    "godini": 21,
+    "fakultet": "Medicinski fakultet",
+    "nasoka": "Opsta medicina",
+    "predmeti": ["Anatomija", "Biologija", "Hemija"],
+    "stipendija": true
+  },
+  {
+    "ime": "Elena",
+    "prezime": "Nikolovska",
+    "prosek": 9.8,
+    "grad": "Ohrid",
+    "godini": 20,
+    "fakultet": "FINKI",
+    "nasoka": "Data Science",
+    "predmeti": ["Machine Learning", "Statistika", "Python"],
+    "stipendija": true
+  }
+]
